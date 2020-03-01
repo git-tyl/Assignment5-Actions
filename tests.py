@@ -24,6 +24,19 @@ class TestCase(unittest.TestCase):
         # assert and check if they are equal
         self.assertEqual(50.265, expected)
 
+    # test for getting first and last element in an array
+    def test_circle(self):
+
+        # create a new array
+        array = [1, 2, 3]
+
+        # get the result of the array
+        expected = task.get_first_and_last_elements(array)
+
+        # assert and check if they are equal
+        self.assertEqual(1, expected[0])
+        self.assertEqual(3, expected[1])
+
 
 if __name__ == '__main__':
     unittest.main()
