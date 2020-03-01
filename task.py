@@ -1,6 +1,7 @@
 import math
-from datetime import date
 
+
+# first run test
 def firstrun():
     return "Success"
 
@@ -27,4 +28,3 @@ def get_days_between_dates(date1, date2):
     # get difference between 2
     delta = date2 - date1
     return delta.days
-
