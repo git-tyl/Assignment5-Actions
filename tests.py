@@ -1,6 +1,6 @@
 import unittest
 import task
-
+from datetime import date
 
 class TestCase(unittest.TestCase):
 
@@ -36,6 +36,18 @@ class TestCase(unittest.TestCase):
         # assert and check if they are equal
         self.assertEqual(1, expected[0])
         self.assertEqual(3, expected[1])
+
+    # test for days between dates
+    def test_dates(self):
+        # create a 2 different dates
+        date1 = date(2014, 7, 2)
+        date2 = date(2014, 7, 5)
+
+        # get the result of the array
+        expected = task.get_days_between_dates(date1, date2)
+
+        # assert and check if the days are correct
+        self.assertEqual(3, expected)
 
 
 if __name__ == '__main__':

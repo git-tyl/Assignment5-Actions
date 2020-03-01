@@ -1,5 +1,5 @@
 import math
-
+from datetime import date
 
 def firstrun():
     return "Success"
@@ -19,3 +19,12 @@ def get_first_and_last_elements(array):
         return [array[0], array[length_of_array - 1]]
 
     return "Invalid Input"
+
+
+# get days between dates, date1 is earlier than date2
+def get_days_between_dates(date1, date2):
+
+    # get difference between 2
+    delta = date2 - date1
+    return delta.days
+
