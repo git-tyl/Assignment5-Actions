@@ -25,7 +25,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(50.265, expected)
 
     # test for getting first and last element in an array
-    def test_circle(self):
+    def test_array(self):
 
         # create a new array
         array = [1, 2, 3]
